@@ -119,6 +119,41 @@
           }
         }
       }
+    },
+    "permit-btn-lib": {
+      "projectType": "library",
+      "root": "projects/permit-btn-lib",
+      "sourceRoot": "projects/permit-btn-lib/src",
+      "prefix": "wy",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/permit-btn-lib/tsconfig.lib.json",
+            "project": "projects/permit-btn-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/permit-btn-lib/src/test.ts",
+            "tsConfig": "projects/permit-btn-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/permit-btn-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/permit-btn-lib/tsconfig.lib.json",
+              "projects/permit-btn-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "permit-lib"
 }

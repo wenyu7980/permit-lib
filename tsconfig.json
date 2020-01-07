@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "permit-btn-lib": [
+        "dist/permit-btn-lib"
+      ],
+      "permit-btn-lib/*": [
+        "dist/permit-btn-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
