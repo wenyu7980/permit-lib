@@ -14,7 +14,7 @@ const PERMIT_BUTTONS: Map<string, PermitBtn> = new Map<string, PermitBtn>();
 export class PermitBtnDirective {
   @Input('wyPermitBtn')
   set condition(btn: PermitBtnData) {
-    if ((!this.btnService) && !this.btnService.check(btn)) {
+    if (this.btnService && !this.btnService.check(btn)) {
       this.viewContainer.clear();
       return;
     }

@@ -6,3 +6,5 @@ export * from './lib/permit-btn';
 export * from './lib/permit-btn-lib.module';
 export * from './lib/permit-btn-data';
 export * from './lib/permit-btn';
+export * from './lib/permit-btn-service';
+export * from './lib/permit-btn.directive';
